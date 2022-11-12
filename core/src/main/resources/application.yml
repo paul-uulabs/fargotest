@@ -1,0 +1,19 @@
+spring:
+  application: fargotest
+  data:
+    mongodb:
+      database: test
+      auto-index-creation: true
+      uri: dpconnectionstring
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
+microservices:
+  urls:
+    validation: http://localhost:8081
+    github: http://localhost:8082
